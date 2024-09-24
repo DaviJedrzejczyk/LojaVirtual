@@ -1,0 +1,200 @@
+﻿body {
+    overflow-y: auto;
+}
+
+.bloco_tabela {
+    height: 200px;
+    width: 300px;
+    margin-left: auto;
+}
+
+input {
+    font-family: 'Marko One', sans-serif;
+}
+
+.geral {
+    justify-content: space-around;
+    display: flex;
+    height: 100%;
+    padding-right: 20px;
+    padding-top: 45px;
+}
+
+.footer_table {
+    height: 10px;
+}
+
+table {
+    height: 150px;
+    width: auto;
+    border-collapse: collapse;
+    overflow: hidden;
+    border-radius: 6px;
+    border: none;
+}
+
+.table-td, .table-th {
+    width: 120px;
+    border-bottom: 1px solid #BDC3C7;
+}
+
+.table-td, .table-th {
+    padding: 5px;
+    border-bottom: 1px solid #BDC3C7;
+}
+
+.table-td, .table-th, .selecionar-td {
+    font-family: 'Marko One', sans-serif;
+    text-align: center;
+}
+
+    .table-td:not(:last-child), .table-th:not(:last-child) {
+        border-right: 1px solid #BDC3C7;
+    }
+
+.table-td {
+    background-color: #F2F2F2;
+    font-size: 14px;
+}
+
+.table-th {
+    background-color: #34495E;
+    color: #FFFFFF;
+}
+
+.table-th, .selecionar-td {
+    font-size: 16px;
+}
+
+.selecionar-td {
+    height: 95%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.selecionar-td {
+    background-color: #1B4F72;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .selecionar-td:hover {
+        background-color: #2A648E;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+.cancelar-td {
+    background-color: #C0392B; /* Tom de vermelho mais profissional */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .cancelar-td:hover {
+        background-color: #E74C3C; /* Um tom de vermelho um pouco mais claro para o hover */
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+
+.campos {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.campos-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: inherit;
+    margin-bottom: 15px;
+}
+
+.labels {
+    font-family: 'Marko One', sans-serif;
+    text-align: left;
+    font-size: 24px;
+}
+
+.textBox, .inputQuantidadePedido {
+    width: 100%;
+    background-color: #F7F7F7;
+    border: none;
+    border-bottom: 1px solid #000000;
+    padding: 5px;
+    outline: none;
+    box-sizing: border-box;
+    margin-bottom: 4px;
+}
+
+    .textBox:focus {
+        border-bottom: 2px solid #000000;
+        outline: none;
+    }
+
+.textBox {
+    font-size: 14px;
+}
+
+.inputQuantidadePedido {
+    font-size: 12px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn_inserir, .btn_limpar, .btn_deletar {
+    cursor: pointer;
+    border: none;
+    height: 50px;
+    width: 150px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 5px;
+    color: white;
+    font-size: 24px;
+}
+
+    .btn_inserir:hover {
+        background-color: #2E86C1;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn_limpar:hover {
+        background-color: #2A648E;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .btn_deletar:hover {
+        background-color: #C0392B;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+.btn_inserir {
+    background-color: #1F6E9E;
+}
+
+.btn_limpar {
+    background-color: #1B4F72;
+}
+
+.btn_deletar {
+    background-color: #A93226;
+}
+
+.selecionar {
+    text-decoration: none;
+    color: white;
+    width: 100% !important;
+}
+
+.btn_next_preview {
+    height: 10px;
+    width: 15px;
+    border-radius: 6px;
+    font-size: 12px;
+    color: black;
+}

@@ -1,0 +1,67 @@
+﻿.dropDown {
+    font-family: 'Marko One', sans-serif;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #F7F7F7; 
+    border: 1px solid #34495E; 
+    border-radius: 4px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: border-color 0.3s ease;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+    .dropDown:focus {
+        border-color: #3498DB; 
+        outline: none;
+        box-shadow: 0px 0px 8px rgba(52, 152, 219, 0.4);
+    }
+
+    .dropDown option {
+        padding: 10px;
+        background-color: #F7F7F7; 
+        color: #34495E;
+    }
+
+        .dropDown option:checked {
+            background-color: #3498DB; 
+            color: white;
+            border: 1px solid #34495E;
+            box-shadow: 0 0 5px 2px rgba(52, 152, 219, 0.5); 
+        }
+
+    .dropDown:hover {
+        border-color: #3498DB;
+    }
+
+option {
+    cursor: pointer;
+}
+.dropAcoes {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #C0C0C0;
+    border-radius: 4px;
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    cursor: pointer;
+    font-family: 'Marko One', sans-serif;
+}
+
+    .dropAcoes:hover {
+        border-color: #007BFF; 
+    }
+
+    .dropAcoes:focus {
+        border-color: #007BFF; 
+        outline: none; 
+    }
+
+    .dropAcoes option {
+        padding: 10px; 
+        cursor: pointer; 
+    }
