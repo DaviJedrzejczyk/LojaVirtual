@@ -27,7 +27,9 @@ Este projeto em .NET Framework 4.8.1 é uma aplicação simples de gerenciamento
    ```
 2. Abra o projeto no Visual Studio.
 
-3. Configure a string de conexão com o banco de dados no arquivo app.config.
+3. Extraia a pasta do Banco.zip para Banco.
+
+4. Configure a string de conexão com o banco de dados no arquivo Web.config se você não deixou a pasta como Banco.
 
 4. Compile e execute o projeto.
 
