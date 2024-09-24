@@ -79,7 +79,7 @@
                                 <asp:Label ID="DataLabel" runat="server" Text='<%# Eval("Data") %>' />
                             </td>
                             <td class="table-td">
-                                <asp:Label ID="ValorLabel" runat="server" Text='<%# Eval("[Total do Pedido]") %>' />
+                                <asp:Label ID="ValorLabel" runat="server" Text='<%# Eval("Total do Pedido", "{0:C}") %>' />
                             </td>
                             <td class="table-td">
                                 <asp:Label ID="ProdutoLabel" runat="server" Text='<%# Eval("Produtos") %>' />
@@ -127,7 +127,7 @@
                                 <asp:Label ID="DataLabel" runat="server" Text='<%# Eval("Data") %>' />
                             </td>
                             <td class="table-td">
-                                <asp:Label ID="ValorLabel" runat="server" Text='<%# Eval("[Total do Pedido]") %>' />
+                                <asp:Label ID="ValorLabel" runat="server" Text='<%# Eval("Total do Pedido", "{0:C}") %>' />
                             </td>
                             <td class="table-td">
                                 <asp:Label ID="ProdutoLabel" runat="server" Text='<%# Eval("Produtos") %>' />
@@ -161,7 +161,7 @@
                                             <th runat="server" class="table-th">Produto</th>
                                             <th runat="server" class="table-th">Quantidade</th>
                                             <th runat="server" class="table-th">Status</th>
-                                            <th runat="server" class="table-th">Ação</th>
+                                            <th runat="server" class="table-th"></th>
                                         </tr>
                                         <tr id="itemPlaceholder" runat="server">
                                         </tr>
@@ -169,7 +169,7 @@
                                 </td>
                             </tr>
                             <tr runat="server">
-                                <td runat="server" style="text-align: center; background-color: #CCCCCC; font-family: 'Marko One', sans-serif; color: #000000; font-size: 12px;">
+                                <td runat="server" style="text-align: center; background-color: #34495E; font-family: 'Marko One', sans-serif; color: white; font-size: 16px; padding:6px;">
                                     <asp:DataPager ID="DataPager1" runat="server">
                                         <Fields>
                                             <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />

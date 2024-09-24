@@ -20,8 +20,11 @@ namespace Services
             try
             {
                 ValidarCliente(cliente);
-                await clienteDAL.SalvarCliente(cliente);
-                return ResponseFactory.CreateInstance().CreateSuccessResponse();
+                Response response = await clienteDAL.SalvarCliente(cliente);
+                if(!response.HasSuccess)
+                    return ResponseFactory.CreateInstance().CreateFailureResponse(response.Message);
+
+                return ResponseFactory.CreateInstance().CreateSuccessResponse(response.Message);
             }
             catch (Exception ex)
             {
@@ -34,9 +37,7 @@ namespace Services
             try
             {
                 if (id <= 0)
-                {
                     return ResponseFactory.CreateInstance().CreateFailureResponse("Este id é inválido");
-                }
 
                 await clienteDAL.DeletarCliente(id);
                 return ResponseFactory.CreateInstance().CreateSuccessResponse("Cliente deletado com sucesso!");

@@ -8,6 +8,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
+using System.Web.UI.HtmlControls;
 using System.Web.UI.WebControls;
 
 namespace LojaVirtual___PresentationLayer.Pages
@@ -77,7 +78,7 @@ namespace LojaVirtual___PresentationLayer.Pages
         protected void BtnClear_Click(object sender, EventArgs e)
         {
             LimparCampos();
-            VisibilidadeBotoes();
+            this.btnDeletar.Visible = false;
         }
 
         protected async void btnDeletar_Click(object sender, EventArgs e)

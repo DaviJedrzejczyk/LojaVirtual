@@ -47,7 +47,7 @@
                                 <asp:Label ID="NomeLabel" runat="server" Text='<%# Eval("Nome") %>' />
                             </td>
                             <td class="table-td">
-                                <asp:Label ID="PrecoLabel" runat="server" Text='<%# Eval("Preço") %>' />
+                                <asp:Label ID="PrecoLabel" runat="server" Text='<%# Eval("Preço Un", "{0:C}") %>' />
                             </td>
                             <td class="table-td">
                                 <asp:Label ID="QuantidadeLabel" runat="server" Text='<%# Eval("Quantidade") %>' />
@@ -62,7 +62,7 @@
                             <tr runat="server" class="table-tr">
                                 <th runat="server" class="table-th">Id</th>
                                 <th runat="server" class="table-th">Nome</th>
-                                <th runat="server" class="table-th">Preço</th>
+                                <th runat="server" class="table-th">Preço Un.</th>
                                 <th runat="server" class="table-th">Quantidade</th>
                             </tr>
                             <tr>
@@ -79,7 +79,7 @@
                                 <asp:Label ID="NomeLabel" runat="server" Text='<%# Eval("Nome") %>' />
                             </td>
                             <td class="table-td">
-                                <asp:Label ID="PrecoLabel" runat="server" Text='<%# Eval("Preço") %>' />
+                                <asp:Label ID="PrecoLabel" runat="server" Text='<%# Eval("Preço Un", "{0:C}") %>' />
                             </td>
                             <td class="table-td">
                                 <asp:Label ID="QuantidadeLabel" runat="server" Text='<%# Eval("Quantidade") %>' />
@@ -97,7 +97,7 @@
                                         <tr runat="server" class="table-tr">
                                             <th runat="server" class="table-th">Id</th>
                                             <th runat="server" class="table-th">Nome</th>
-                                            <th runat="server" class="table-th">Preço</th>
+                                            <th runat="server" class="table-th">Preço Un.</th>
                                             <th runat="server" class="table-th">Quantidade</th>
                                             <th runat="server" class="table-th">Ação</th>
                                         </tr>
@@ -107,7 +107,7 @@
                                 </td>
                             </tr>
                             <tr runat="server">
-                                <td runat="server" style="text-align: center; background-color: #CCCCCC; font-family: 'Marko One', sans-serif; color: #000000;">
+                               <td runat="server" style="text-align: center; background-color: #34495E; font-family: 'Marko One', sans-serif; color: white; font-size: 16px; padding:6px; ">
                                     <asp:DataPager ID="DataPager1" runat="server">
                                         <Fields>
                                             <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
@@ -122,7 +122,7 @@
                 </asp:ListView>
                 <asp:SqlDataSource ID="SqlDataSourceProduto" runat="server" ConnectionString="<%$ ConnectionStrings:LojaVirtualDbConnectionString %>" SelectCommand="SELECT [PROD_ID] as Id, 
 [PROD_NOME] as Nome, 
-[PROD_PRECO] as [Preço], 
+[PROD_PRECO] as [Preço Un], 
 [PROD_QUANTIDADE] as Quantidade 
 FROM [Produtos]"></asp:SqlDataSource>
             </div>

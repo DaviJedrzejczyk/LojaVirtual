@@ -70,6 +70,13 @@ namespace Services.Services
         {
             try
             {
+                if(pedido.ProdutosSelecionados.Count <= 0)
+                    return ResponseFactory.CreateInstance().CreateFailureResponse("Pedido deve ser preenchido.");
+
+                if (pedido.QuantidadeDosProdutos.Count <= 0)
+                    return ResponseFactory.CreateInstance().CreateFailureResponse("O Produto deve ter sua quantidade preenchida.");
+
+
                 SingleResponse<Pedido> pedidoPreparado = await PreparaPedido(pedido);
 
                 if (!pedidoPreparado.HasSuccess)

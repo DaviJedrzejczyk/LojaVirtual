@@ -26,8 +26,6 @@ namespace LojaVirtual___PresentationLayer.Pages
         {
             if (IsPostBack)
             {
-
-
                 long id = !string.IsNullOrWhiteSpace(txtID.Text) ? long.Parse(txtID.Text) : 0;
                 DateTime? data = !string.IsNullOrWhiteSpace(this.txtDataNascimento.Text) ? DateTime.Parse(this.txtDataNascimento.Text) : (DateTime?)null;
 
@@ -48,8 +46,6 @@ namespace LojaVirtual___PresentationLayer.Pages
                     VisibilidadeBotoes();
                 }
             }
-
-            Response.Redirect(Request.Url.AbsoluteUri);
         }
 
         protected void ListViewClientes_ItemCommand(object sender, ListViewCommandEventArgs e)
@@ -75,7 +71,7 @@ namespace LojaVirtual___PresentationLayer.Pages
         protected void BtnClear_Click(object sender, EventArgs e)
         {
             LimparCampos();
-            VisibilidadeBotoes();
+            this.btnDeletar.Visible = false;
         }
 
         protected async void btnDeletar_Click(object sender, EventArgs e)

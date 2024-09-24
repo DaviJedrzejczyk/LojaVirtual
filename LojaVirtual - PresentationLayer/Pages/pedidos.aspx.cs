@@ -24,7 +24,6 @@ namespace LojaVirtual___PresentationLayer.Pages
 
             if (!IsPostBack)
             {
-                VisibilidadeBotoes();
                 await PreencheComboBoxs();
             }
         }
@@ -51,7 +50,6 @@ namespace LojaVirtual___PresentationLayer.Pages
                 }
 
                 this.ListViewPedidos.DataBind();
-                LimparCampos();
                 Response.Redirect(Request.Url.AbsoluteUri);
             }
         }
@@ -75,19 +73,8 @@ namespace LojaVirtual___PresentationLayer.Pages
 
         protected void BtnClear_Click(object sender, EventArgs e)
         {
-            LimparCampos();
-            VisibilidadeBotoes();
-        }
-
-        private void LimparCampos()
-        {
-            this.txtID.Text = null;
-            this.dClientes.SelectedIndex = 0;
-        }
-
-        private void VisibilidadeBotoes()
-        {
-            this.BtnClear.Enabled = !this.BtnClear.Enabled;
+            dropProduto.ClearSelection();
+            dClientes.ClearSelection();
         }
 
         protected async void ddlAcoes_SelectedIndexChanged(object sender, EventArgs e)
@@ -142,7 +129,7 @@ namespace LojaVirtual___PresentationLayer.Pages
 
         private List<string> ProdutosSelecionados()
         {
-            List<String> selectedValues = new List<String>();
+            List<string> selectedValues = new List<string>();
             foreach (ListItem item in this.dropProduto.Items)
             {
                 if (item.Selected)

@@ -51,6 +51,7 @@ namespace DataAccessLayer.Impl
                 clienteAtual.Cli_DataNascimento = cliente.Cli_DataNascimento;
                 clienteAtual.Cli_Ativo = cliente.Cli_Ativo;
                 clienteAtual.Cli_Nome = cliente.Cli_Nome;
+                clienteAtual.Cli_Email = cliente.Cli_Email;
 
                 await context.SaveChangesAsync();
 

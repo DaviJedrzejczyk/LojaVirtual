@@ -10,7 +10,7 @@ namespace DataAccessLayer
 {
     public class LojaVirtualDbContext : DbContext
     {
-        public LojaVirtualDbContext() : base("name=MinhaConexao")
+        public LojaVirtualDbContext() : base("name=LojaVirtualDbConnectionString")
         {
         }
 

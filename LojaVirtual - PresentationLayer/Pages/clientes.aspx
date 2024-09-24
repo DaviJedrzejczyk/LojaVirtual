@@ -128,7 +128,7 @@
                                 </td>
                             </tr>
                             <tr runat="server">
-                                <td runat="server" style="text-align: center; background-color: #CCCCCC; font-family: 'Marko One', sans-serif; color: #000000;">
+                                 <td runat="server" style="text-align: center; background-color: #34495E; font-family: 'Marko One', sans-serif; color: white; font-size: 16px;padding:6px;">
                                     <asp:DataPager ID="DataPager1" runat="server">
                                         <Fields>
                                             <asp:NextPreviousPagerField ButtonType="Button" ShowFirstPageButton="True" ShowNextPageButton="False" ShowPreviousPageButton="False" />
