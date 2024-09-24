@@ -1,5 +1,8 @@
 # LojaVirtual
 
+[!
+[LinkedIn](https://img.shields.io/badge/LinkedIn-000?style=for-the-badge&logo=linkedin&logoColor=0E76A8)](https://www.linkedin.com/in/davi-jedrzejczyk-03b22a245/)
+
 ## 📕 Sobre
 
 Este projeto em .NET Framework 4.8.1 é uma aplicação simples de gerenciamento de clientes, produtos e pedidos. Ele permite cadastrar clientes, associar produtos aos pedidos e registrar todas as transações. A aplicação fornece operações básicas de CRUD para cada entidade, garantindo uma gestão eficaz dos dados. É ideal para demonstrar funcionalidades de relacionamento entre entidades no contexto de um sistema de vendas.
@@ -31,7 +34,7 @@ Este projeto em .NET Framework 4.8.1 é uma aplicação simples de gerenciamento
 
 4. Configure a string de conexão com o banco de dados no arquivo Web.config se você não deixou a pasta como Banco.
 
-4. Compile e execute o projeto.
+5. Compile e execute o projeto.
 
 ## 📋 Uso
 
