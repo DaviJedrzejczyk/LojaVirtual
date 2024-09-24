@@ -1,4 +1,8 @@
 # Loja Virtual
+Um sistema simples e funcional
+
+## 🌐 Redes Sociais
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0E76A8?style=for-the-badge&logo=linkedin&logoColor=white&color=0E76A8&labelColor=0E76A8&)](https://www.linkedin.com/in/davi-jedrzejczyk-03b22a245)
 
 ## 📕 Sobre
 
