@@ -1,4 +1,4 @@
-# LojaVirtual
+# Loja Virtual
 
 ## 📕 Sobre
 
