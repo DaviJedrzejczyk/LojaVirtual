@@ -42,3 +42,23 @@ Este projeto em .NET Framework 4.8.1 é uma aplicação simples de gerenciamento
 1. Inicie a aplicação.
 2. Utilize a interface para cadastrar clientes, produtos e criar pedidos.
 3. Gerencie as entidades através das operações CRUD disponíveis.
+
+## 📜 Regras 📜
+
+### Clientes 👤
+
+1. Cliente deve ter um nome com no minimo 2 caracteres e no maximo 50
+2. Email é único, seguindo o padrão da Google, até no maximo 50 caracteres
+3. Data de nascimento é obrigatorio
+
+### Produtos 🛒
+
+1. Produto deve ter um nome com no minimo 2 caracteres e no maximo 30
+2. Preço dele deve ser de no minimo R$ 0,01
+3. Quantidade deve ser no minimo de 1
+
+### Pedidos 📦
+
+1. Deve ter um Cliente Selecionado.
+2. Deve ter pelo menos um Produto selecionado.
+3. Pode selecionar quantos produtos quiseres e definir a quantidade para cada um.
