@@ -68,10 +68,6 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\LojaVirtualmdf.mdf" />
-    <Content Include="App_Data\LojaVirtualmdf_log.ldf">
-      <DependentUpon>LojaVirtualmdf.mdf</DependentUpon>
-    </Content>
     <Content Include="css\cliente.css" />
     <Content Include="css\main.css" />
     <Content Include="js\formataCampoPreco.js" />
